@@ -1,15 +1,15 @@
-#STEPS TO SECURILY AND EFFICIENTLY CONNECT TO GITHUB USING SSH
+# STEPS TO SECURILY AND EFFICIENTLY CONNECT TO GITHUB USING SSH
 PATs (Personal Access Tokens), essentially long passwords attached to an account and regular passwords use basic password authentication over HTTPS.
 They are both vulnerable to brute-force attacks and run the risk of being abused in a case of a data breach.
 Using SSH is more secure because it uses stronger encryption and public-key authentication is better than basic auth over HTTPS.
 Using SSH also enables passwordless auth out of the box.
 
-##PRE-REQ
+## PRE-REQ
 Create repository on Github.
     - Github is basically a 'remote Git server', i.e. a computer in the cloud (accessible over the internet) to store files
     - A repository can be thought of as a folder/directory on our Git server
 
-##STEPS
+## STEPS
 1. On the local machine, use ssh-keygen command to generate a private-public key pair
     CMD: ssh-keygen -t ed25519 -C "your_email@example.com"
     The -t specifies the type of encryption algorithm to use for the asymetric key generation
